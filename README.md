@@ -1,2 +1,2 @@
 # Algorithms-and-Data-Structures-In-Ruby
-Ruby implementation of Algorithms,Data-structures and programming challenge
+This Repo serves as a practice to hone my problem solving skills and implementation of various Algorithms and Data structures solutions of many challenges from Books, Hacker-Rank or Deliberate-Practice using Ruby.

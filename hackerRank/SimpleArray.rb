@@ -24,4 +24,3 @@ fptr.write result
 fptr.write "\n"
 
 fptr.close()
-

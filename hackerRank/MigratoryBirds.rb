@@ -9,42 +9,33 @@ require 'stringio'
 # The function is expected to return an INTEGER.
 # The function accepts INTEGER_ARRAY arr as parameter.
 #
-
 def migratoryBirds(arr)
     # Write your code here
-    
-# counts = Hash.new(0) #Empty hash
-# birds = {}
-# arr.each do |num|
-#    counts[num]+= 1
-# end
-
-# counts.each { |k, v| 
-# if v == counts.values.max
-# birds[k] = v
-# end
-# }
-# p birds.uniq
-
-arry = [1,2,2,2,3,3,3,4,5]
-hash_array = Hash.new(0)
-max = hash_array.max
-# counts recurrence into new hash
-arry.each do |num|
-hash_array[num] += 1 
+# Count the number of times a number is repeated in an array
+counts = Hash.new(0) #Empty hash
+min_birds = []
+arr.each do |num|
+   counts[num]+= 1
 end
-p hash_array
+p counts
 
-if hash_array.uniq == true
-    p "unique"
-else   
-    p hash_array.index(max)
-    p hash_array[2]
-    p "not unique"
+value_max = 0
+counts.each do |key,value|
+ if value.to_i > value_max
+   value_max = value.to_i
+ end
 end
-
+puts "Max value is #{value_max}"
+# loop throught values and print less key
+counts.each do|key,value|
+if value == value_max
+min_birds.push(key)
+p key  
 end
-
+end
+p counts.key(value_max)
+p min_birds.min
+end
 
 fptr = File.open(ENV['OUTPUT_PATH'], 'w')
 

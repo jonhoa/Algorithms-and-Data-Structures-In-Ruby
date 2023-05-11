@@ -23,6 +23,13 @@ menu_items["Sausage"] = "10"
 p menu_items
 ```
 # 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
+```ruby
+book_info = {"title" => "XYZ", "author" => "ABC", "pages" => 200, "language" => "English"}
+p book_info["title"]
+p book_info["author"]
+p book_info["pages"]
+p book_info["language"]
+```
 
 # 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
 

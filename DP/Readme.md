@@ -17,6 +17,11 @@ p array_hashes[0]["lastname"]
 
 # 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
 
+```ruby
+menu_items = {"Burger" => "20","Pizza" => "10","Coleslaw" => "5"}
+menu_items["Sausage"] = "10"
+p menu_items
+```
 # 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
 
 # 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.

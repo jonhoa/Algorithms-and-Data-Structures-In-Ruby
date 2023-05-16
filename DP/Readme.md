@@ -32,6 +32,10 @@ p book_info["language"]
 ```
 
 # 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
+```ruby
+books = [{"title" => "XTY", "author" => "ABC"}, {"title" => "LMO", "author" => "CRT"},{"title" => "POP", "author" => "NMU"}]
+p books[2]["author"]
+```
 
 # 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
 

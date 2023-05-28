@@ -62,3 +62,9 @@ words["Carpet"] = "A sizeable rug with colorful patterns and looms"
 p words
 ```
 # 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+```ruby
+shirts = {"Brand" => "Fubu", "Color" => "Green", "Size" => "L"}
+p shirts["Brand"]
+p shirts["Color"]
+p shirts["Size"]
+```

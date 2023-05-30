@@ -2,7 +2,9 @@
 #     For example, [1, 2, 3] becomes [3, 6, 9].
 ```ruby
 numbers = [1,2,3]
-numbers.each {x | x*3}
+numbers_new = []
+numbers.each {|x| numbers_new.push(x*3)}
+p numbers_new
 ```
 
 #  2. Start with an array of strings and create a new array with each string upcased.

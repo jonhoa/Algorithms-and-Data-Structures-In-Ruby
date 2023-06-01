@@ -9,7 +9,12 @@ p numbers_new
 
 #  2. Start with an array of strings and create a new array with each string upcased.
 #     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
-
+```ruby
+words =["hello", "goodbye"]
+words_new = []
+words.each {|x| words_new.push(x.upcase)}
+p words_new
+```
 #  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
 
